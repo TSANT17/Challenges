@@ -4,7 +4,7 @@ import axios from 'axios';
 export const useFetchGifs = ({ category }) => {
 
   const apiKey = 'O00QaM4LSg3DVrx2MLEW3uNgYCJDVV4k';
-  const searchTerm = 'gatos'; // Puedes cambiar esto por lo que desees buscar
+  const searchTerm = 'gatos'; 
 
   const usefetchGifs = async () => {
     try {
@@ -12,25 +12,12 @@ export const useFetchGifs = ({ category }) => {
         params: {
           q: searchTerm,
           api_key: apiKey,
-          limit: 10, // Número de GIFs a obtener
+          limit: 10, 
         },
       });
-      console.log(response.data.data); // Muestra los datos en la consola para verificar
+      console.log(response.data.data); 
     } catch (error) {
       console.error(error);
     }
   };
 }
-//   const [images, setImages] = useState([]);
-
-//   const getImages = async () => {
-//     const images = await getGifs(category);
-//     setImages(images);
-//   };
-//   useEffect(() => {
-//     getImages();
-//   }, []);
-//   return (
-//     images: images,
-//     isLoading: isLoading)
-// };

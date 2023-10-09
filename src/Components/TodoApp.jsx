@@ -1,5 +1,5 @@
 import React from "react";
-import useTODO from "../hooks/useTODO"; // Asegúrate de tener la ruta correcta
+import useTODO from "../hooks/useTODO";
 import TodoList from "./TodoList";
 import AddTodo from "./AddTodo";
 import "./TodoApp.css";
